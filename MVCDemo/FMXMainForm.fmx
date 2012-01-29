@@ -1,0 +1,56 @@
+object FMXMainFrm: TFMXMainFrm
+  Left = 0
+  Top = 0
+  Caption = 'FMXMainForm'
+  ClientHeight = 400
+  ClientWidth = 600
+  Visible = False
+  StyleLookup = 'backgroundstyle'
+  object ButtonAdd: TButton
+    Position.Point = '(24,24)'
+    Width = 80.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 0
+    Text = 'Add'
+  end
+  object ButtonDelete: TButton
+    Position.Point = '(112,24)'
+    Width = 80.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = ButtonDeleteClick
+    TabOrder = 1
+    Text = 'Delete'
+  end
+  object StringGrid1: TStringGrid
+    Position.Point = '(24,64)'
+    Width = 537.000000000000000000
+    Height = 297.000000000000000000
+    StyleLookup = 'gridstyle'
+    TabOrder = 2
+    AlternatingRowBackground = True
+    RowHeight = 21.000000000000000000
+    ShowSelectedCell = False
+    RowCount = 0
+    object StringColumn1: TStringColumn
+      Width = 100.000000000000000000
+      Height = 274.000000000000000000
+      TabOrder = 0
+      Header = 'Text'
+      ReadOnly = True
+    end
+    object StringColumn2: TStringColumn
+      Position.Point = '(100,0)'
+      Width = 100.000000000000000000
+      Height = 274.000000000000000000
+      TabOrder = 1
+      Header = 'Full price'
+    end
+    object StringColumn3: TStringColumn
+      Position.Point = '(200,0)'
+      Width = 100.000000000000000000
+      Height = 274.000000000000000000
+      TabOrder = 2
+      Header = 'Discounted price'
+    end
+  end
+end
